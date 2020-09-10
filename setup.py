@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 
 setup(
     name="spqr.kieran",
@@ -6,6 +6,6 @@ setup(
     author="Maks Snegov",
     author_email="snegov@spqr.link",
     description="Helpers for SPQR projects",
-    packages=find_packages(),
+    packages=find_namespace_packages(include=['spqr.*']),
     python_requires=">=3.8",
 )
